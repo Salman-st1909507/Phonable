@@ -13,7 +13,12 @@ class Ally(Entity,IAttack):
     def die(self, ally):
         if self.hp < 0:
             print(f'{self.name} defeated by {ally.name}')
-            
+
+    def distance(self, row, column):
+        
+        pass
+        
+        
     def to_string(self):
         print(f'{self.name}\'s stats ({self.symbol}):\nhp: {self.hp}\ndamag: {self.damage}')
 

@@ -1,5 +1,6 @@
 from enum import Enum
 import random
+from entity import Entity
 from utils import reverse_array, shuffle
 from ally import Barbarian,Archer
 from enemy import Cannon,ArcherTower
@@ -16,7 +17,7 @@ def generate_board(rows, columns):
             board[row].append('.')
     return board
 
-
+        
 class Board():
     def __init__(self, rows, columns, alliance):
         self.board = generate_board(rows, columns)

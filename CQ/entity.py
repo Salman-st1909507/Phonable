@@ -1,3 +1,4 @@
+from abc import ABC, abstractmethod
 import random
 
 class Entity:
@@ -7,6 +8,7 @@ class Entity:
         self.symbol=symbol
         self.hp=hp
         self.damage=damage
+    
 
 class Wall(Entity):
     def __init__(self):
